@@ -1,0 +1,1 @@
+const t=new Date('2027-02-14T18:00:00');setInterval(()=>{let d=t-new Date();if(d<0){cd.textContent='¡Llegó el gran día!';return;}let s=Math.floor(d/1000);let days=Math.floor(s/86400);s%=86400;let h=Math.floor(s/3600);s%=3600;let m=Math.floor(s/60);let sec=s%60;cd.textContent=`${days}d ${h}h ${m}m ${sec}s`;},1000);
